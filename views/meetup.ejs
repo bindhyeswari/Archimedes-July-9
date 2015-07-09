@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meetup Events for GoLiveLabs</title>
+    <script>
+
+        // make a call to access the meetup events for GoLiveLabs
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', '/meetup/events');
+        xhr.addEventListener('readystatechange', function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+
+                } else {
+
+                }
+            }
+        })
+        xhr.send();
+
+
+        // making a post request:
+        /**
+         * json_object = { username: '', password: '' };
+         *
+         *  var xhr = new XMLHttpRequest();
+            xhr.open('post', '/meetup/events');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify(json_object));
+         * */
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
